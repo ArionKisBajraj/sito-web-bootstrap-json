@@ -1,0 +1,16 @@
+{
+    "page": "Home",
+    "title": "Socket e Reti",
+    "description": "Benvenuto nella nostra risorsa educativa sui socket e le reti!",
+    "sections": [
+      {
+        "header": "Benvenuto",
+        "content": "Questa è una pagina introduttiva sulle reti e i socket. Qui trovi articoli e spiegazioni riguardanti i protocolli di rete."
+      },
+      {
+        "header": "Cos'è un Socket?",
+        "content": "Un socket è un punto finale per la comunicazione su una rete, utile per inviare e ricevere dati."
+      }
+    ]
+  }
+  

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Collegamento a Bootstrap per utilizzare stili e componenti predefiniti -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Collegamento alle icone di Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Collegamento al file JavaScript personalizzato -->
+    <link rel="stylesheet" href="script.js">
+    <title>Introduzione alle Socket</title>
+</head>
+<body>
+    <!-- Barra di navigazione -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo e link alla home -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-exclude fs-1 me-2"></i>
+                Socket e Reti
+            </a>
+            <!-- Bottone per la navigazione responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu di navigazione -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="socket.html">Socket</a>
+                    </li>
+                    <!-- Dropdown per altre sezioni -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Altre Sezioni
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="osi.html">Modello OSI</a></li>
+                            <li><a class="dropdown-item" href="tcp_vs_udp.html">TCP vs UDP</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="glossario.html">Glossario</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel per immagini -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Prima immagine attiva -->
+            <div class="carousel-item active">
+                <img src="im2.jpeg" class="d-block w-100" alt="Image 1">
+            </div>
+            <!-- Seconda immagine -->
+            <div class="carousel-item">
+                <img src="im3.jpeg" class="d-block w-100" alt="Image 2">
+            </div>
+        </div>
+        <!-- Pulsanti di navigazione del carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Titolo sopra il carousel -->
+        <div class="header-title">
+            <h1>Benvenuti nel mondo delle Socket</h1>
+            <p>Esplora il funzionamento delle comunicazioni di rete</p>
+        </div>
+    </div>
+
+    <!-- Contenuto principale -->
+    <div class="main-content">
+        <!-- Messaggio di avviso -->
+        <div class="alert alert-info" role="alert">
+            Scopri come funzionano le socket e le comunicazioni di rete! <a href="socket.html" class="alert-link">Clicca qui per iniziare.</a>
+        </div>
+
+        <!-- Accordion per contenuti espandibili -->
+        <div class="accordion" id="accordionExample">
+            <!-- Primo elemento dell'accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Tipologie di Socket
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Esistono due principali tipi di socket: <strong>Stream</strong> e <strong>Datagram</strong>. Ogni tipo è progettato per specifiche modalità di trasmissione dati.
+                    </div>
+                </div>
+            </div>
+            <!-- Secondo elemento dell'accordion -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Come funzionano?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Le socket permettono la comunicazione bidirezionale tramite l'uso di protocolli come <strong>TCP</strong> e <strong>UDP</strong>.
+                        <!-- Immagine e modal -->
+                        <img id="myImg" src="diagramma_conessione.jpg" alt="Diagramma connessione socket Client-Server" width="300" height="200">
+
+                        <!-- Modal per visualizzare immagine ingrandita -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                      
+                        <script>
+                        // Script per gestire la visualizzazione del modal
+                        var modal = document.getElementById('myModal');
+                        var img = document.getElementById('myImg');
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+
+                        // Mostra il modal con l'immagine ingrandita
+                        img.onclick = function(){
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+
+                        // Chiudi il modal quando l'utente clicca sulla "X"
+                        var span = document.getElementsByClassName("close")[0];
+                        span.onclick = function() { 
+                            modal.style.display = "none";
+                        }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+        <p>Creato da Arion Kis Bajraj, 5E</p>
+    </footer>
+    
+    <!-- Script di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

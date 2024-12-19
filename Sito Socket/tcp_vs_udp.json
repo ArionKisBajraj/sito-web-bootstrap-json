@@ -1,0 +1,20 @@
+{
+    "page": "TCP vs UDP",
+    "title": "TCP vs UDP",
+    "description": "Compara TCP e UDP per determinare quale protocollo usare per la tua applicazione.",
+    "sections": [
+      {
+        "header": "Transmission Control Protocol (TCP)",
+        "content": "TCP è un protocollo orientato alla connessione che garantisce la consegna affidabile dei pacchetti."
+      },
+      {
+        "header": "User Datagram Protocol (UDP)",
+        "content": "UDP è un protocollo non orientato alla connessione che non garantisce l'affidabilità, ma è più veloce."
+      },
+      {
+        "header": "Quando usare TCP o UDP?",
+        "content": "Se hai bisogno di affidabilità, usa TCP. Se la velocità è più importante, usa UDP."
+      }
+    ]
+  }
+  

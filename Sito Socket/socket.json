@@ -1,0 +1,16 @@
+{
+    "page": "Socket",
+    "title": "Socket e Reti",
+    "description": "Questa pagina esplora i concetti fondamentali dei socket.",
+    "sections": [
+      {
+        "header": "Cos'è un Socket?",
+        "content": "Un socket è un'interfaccia software per comunicare tra due processi su una rete. Permette l'invio e la ricezione di dati."
+      },
+      {
+        "header": "Utilizzo dei Socket",
+        "content": "I socket sono usati per implementare connessioni di rete tra client e server in applicazioni come HTTP, FTP e molti altri."
+      }
+    ]
+  }
+  

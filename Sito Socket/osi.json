@@ -1,0 +1,36 @@
+{
+    "page": "Modello OSI",
+    "title": "Il Modello OSI",
+    "description": "Scopri i sette livelli del modello OSI.",
+    "sections": [
+      {
+        "header": "Fisico",
+        "content": "Gestisce la trasmissione di segnali grezzi su un canale fisico."
+      },
+      {
+        "header": "Link Dati",
+        "content": "Gestisce la trasmissione di frame tra nodi adiacenti."
+      },
+      {
+        "header": "Rete",
+        "content": "Gestisce l'instradamento dei pacchetti tra i dispositivi."
+      },
+      {
+        "header": "Trasporto",
+        "content": "Gestisce la comunicazione end-to-end, come TCP o UDP."
+      },
+      {
+        "header": "Sessione",
+        "content": "Gestisce la sessione di comunicazione tra due processi."
+      },
+      {
+        "header": "Presentazione",
+        "content": "Gestisce la formattazione dei dati per l'utente finale."
+      },
+      {
+        "header": "Applicazione",
+        "content": "Fornisce l'interfaccia utente per interagire con il software applicativo."
+      }
+    ]
+  }
+  
